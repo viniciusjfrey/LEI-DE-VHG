@@ -28,8 +28,26 @@ function calcularMedia() {
     // Média Ponderada
     let mediaPonderada = (mediaAparencia + mediaPersonalidade + mediaSituacao) / (pesoAparencia + pesoPersonalidade + pesoSituacao);
 
-    // Arredondar a média para um número após a vírgula
+    // Arredondar a média
     mediaPonderada = Math.round(mediaPonderada * 10) / 10;
 
     document.getElementById("media").innerText = mediaPonderada.toFixed(1);
+}
+
+function limparCampos() {
+    // Limpar campos de entrada
+    document.getElementById("personalidade").value = "";
+    document.getElementById("rosto").value = "";
+    document.getElementById("peito").value = "";
+    document.getElementById("bunda").value = "";
+    document.getElementById("historico").value = "";
+    document.getElementById("dialogo").value = "";
+    document.getElementById("repertorio").value = "";
+    document.getElementById("carater").value = "";
+    document.getElementById("redes").value = "";
+    document.getElementById("familia").value = "";
+    document.getElementById("financeiro").value = "";
+
+    // Limpar resultado
+    document.getElementById("media").innerText = "-";
 }

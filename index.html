@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lei de VHG</title>
+    <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>LEI DE VHG</h1>
+        <h1>Lei de VHG</h1>
 
-        <!-- Seção Aparência -->
-        <section class="section" id="aparencia">
-            <h2>Aparência</h2>
+        <!-- Seção Proporcionalidade -->
+        <section class="section" id="proporcionalidade">
+            <h2>Proporcionalidade</h2>
             <div class="inputs">
                 <label for="personalidade">Proporcionalidade:</label>
                 <input type="number" id="personalidade" min="0" max="10" placeholder="0">
@@ -62,7 +63,8 @@
         </section>
 
         <button onclick="calcularMedia()">Calcular Média</button>
-        <p>Média: <span id="media">-</span></p>
+        <button onclick="limparCampos()">Limpar</button>
+        <p>Média Ponderada: <span id="media">-</span></p>
     </div>
 
     <footer class="footer">
